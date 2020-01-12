@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">>
+
+<head>
+    <title>45期末作業</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lib/w3.css">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/fig.css" rel="stylesheet" type="text/css">
+    <link href="css/btn1.css" rel="stylesheet" type="text/css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        main {
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-content w3-section" style="max-width:5000px">
+        <img class="mySlides" src="p1.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p2.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p3.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p4.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p4.jpg" style="display:block; margin:auto;">
+    </div>
+
+
+
+
+<div id="all">
+    <header id="header">
+        <div class="logo"><img src="1577900383382.jpg"></div>
+    </header>
+    <div id="menu-wrapper">
+        <ul class="menu">
+            <li><a href="45.html">Top10</a>
+            </li>
+            <li><a href=rocket.html>火箭隊</a>
+            </li>
+            <li><a href=laker.html>湖人隊</a>
+            </li>
+            <li><a href="warrios.html">勇士隊</a>
+            </li>
+            <li><a href="bucks.html">公鹿隊</a>
+            </li>
+         </ul>
+    </div>
+    <div id="wrapper">
+        <main>
+            <div id="fig-wrapper">
+                <p class="title">人物介紹</p>
+                <section class="fig">
+                    <p class="fig-title"><a href="laker.html">LeBron James</a></p>
+                    <img class="fig-img" src="L1.jpg" alt="LeBron James">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Anthony Davis</p>
+                    <img class="fig-img" src="l2.jpg" alt="Anthony Davis">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Kyle Kuzma</p>
+                    <img class="fig-img" src="l3.jpg" alt="Kyle Kuzma">
+                </section>     
+            </div>
+                <a href="https://www.nbastore.tw/products?categories=LosAngelesLakers" target="_blank" style="text-decoration:none;color:red;">>>>>>>快來看看湖人隊周邊商品</a>
+                
+        </main>
+    </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
+
+</div>
+</body>
+
+</html>
